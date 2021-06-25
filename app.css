@@ -3,6 +3,9 @@ body {
     margin: 0;
 }
 
+
+/* ---------------- HEADER ---------------- */
+
 header {
     width: 99%;
     height: 180px;
@@ -34,6 +37,57 @@ header h1 {
     text-align: center;
     padding-top: 10px;
 }
+
+
+/* ---------------- PRODUCT SECTION ---------------- */
+
+.products {
+    width: 80%;
+    /* height: 400px; */
+    margin: auto;
+    display: flex;
+    /* border: 1px solid #000; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product_card {
+    width: 145px;
+    height: 210px;
+    /* border: 1px solid #000; */
+    text-align: center;
+    margin: 0 auto;
+}
+
+.product_img {
+    width: 145px;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.product_desc {
+    width: 145px;
+    height: 70px;
+    box-sizing: border-box;
+    /* border: 1px solid #000; */
+}
+
+.product_p {
+    padding: 0;
+}
+
+.product_h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.product_btn {
+    margin: auto;
+}
+
+
+/* ---------------- CAROUSEL ------------------- */
 
 
 /* Slideshow container */

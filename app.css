@@ -63,6 +63,22 @@ header h1 {
     border-radius: 5px;
 }
 
+.navbtn:nth-of-type(1) {
+    background-color: rgba(46, 179, 51, 0.7);
+}
+
+.navbtn:nth-of-type(2) {
+    background-color: #24B329;
+}
+
+.navbtn:nth-of-type(3) {
+    background-color: #17B31D;
+}
+
+.navbtn:nth-of-type(4) {
+    background-color: #0AAD11;
+}
+
 
 /* ---------------- CAROUSEL ------------------- */
 
@@ -70,7 +86,7 @@ header h1 {
 /* Slideshow container */
 
 .slideshow-container {
-    width: 90%;
+    width: 70%;
     position: relative;
     margin: auto;
     border: 1px solid #000;
@@ -82,6 +98,11 @@ header h1 {
 
 .mySlides {
     display: none;
+}
+
+.slide_img {
+    width: 100%;
+    height: 300px;
 }
 
 

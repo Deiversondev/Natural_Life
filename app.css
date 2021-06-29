@@ -9,7 +9,7 @@ body {
 header {
     width: 99%;
     height: 180px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -30,21 +30,37 @@ header h1 {
     font-size: 48px;
 }
 
+#search_bar {
+    text-align: center;
+    width: 234px;
+    height: 33px;
+    border-radius: 10px;
+    border: none;
+}
+
+#search_bar:focus {
+    outline: none;
+}
+
 .navbar {
-    width: 99%;
+    width: 100%;
     height: 40px;
     margin: auto;
-    border: 1px solid #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* border: 1px solid #000; */
     display: flex;
+    justify-content: space-evenly;
 }
 
 .navbtn {
     box-sizing: border-box;
-    width: 25%;
+    width: 24.7%;
     height: 40px;
     border: 1px solid #000;
     text-align: center;
     padding-top: 10px;
+    border-radius: 5px;
 }
 
 

@@ -1,6 +1,7 @@
 body {
     border: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -9,7 +10,6 @@ body {
 header {
     width: 95%;
     height: 180px;
-    /* border: 1px solid #000; */
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -38,6 +38,20 @@ header h1 {
     border: none;
 }
 
+#search_bar+button {
+    width: 60px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s;
+}
+
+#search_bar+button:hover {
+    background-color: #17B31D;
+    color: #fff;
+}
+
+.form_input,
 #search_bar:focus {
     outline: none;
 }
@@ -48,7 +62,6 @@ header h1 {
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    /* border: 1px solid #000; */
     display: flex;
     justify-content: space-evenly;
 }
@@ -57,7 +70,6 @@ header h1 {
     box-sizing: border-box;
     width: 24.7%;
     height: 40px;
-    /* border: 1px solid #000; */
     text-align: center;
     padding-top: 10px;
     border-radius: 5px;
@@ -110,6 +122,7 @@ header h1 {
 .slide_img {
     width: 100%;
     height: 300px;
+    filter: brightness(50%);
 }
 
 
@@ -153,7 +166,6 @@ header h1 {
 .text {
     color: #f2f2f2;
     font-size: 40px;
-    /* padding: 8px 12px; */
     position: absolute;
     bottom: 50%;
     width: 100%;
@@ -229,7 +241,6 @@ header h1 {
     margin: auto;
     margin-bottom: 80px;
     display: flex;
-    /* border: 1px solid #000; */
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
@@ -237,7 +248,6 @@ header h1 {
 .product_card {
     width: 145px;
     height: 210px;
-    /* border: 1px solid #000; */
     text-align: center;
     margin: 20px auto 0 auto;
 }
@@ -278,7 +288,7 @@ header h1 {
     width: 145px;
     height: 70px;
     box-sizing: border-box;
-    /* border: 1px solid #000; */
+    font-size: 13px;
 }
 
 .product_p {
@@ -298,6 +308,11 @@ header h1 {
     padding: 0;
     background-color: #1F9103;
     border: none;
+    transition: all 0.5s;
+}
+
+.product_btn:hover {
+    background-color: #125900;
 }
 
 .product_btn>a {
@@ -306,17 +321,11 @@ header h1 {
 }
 
 
-/* .product_btn:focus {
-    outline: none;
-} */
-
-
 /* ---------------- CONTACT US SECTION ------------------- */
 
 .contact_us {
     width: 95%;
     height: 200px;
-    /* border: 1px solid #000; */
     display: flex;
     margin: auto;
 }
@@ -327,15 +336,12 @@ header h1 {
     border: 1px solid #fff;
     margin: auto;
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
 }
 
 .title1 {
     width: 60%;
     height: 40px;
-    /* border: 1px solid #1e9d3e; */
-    /* box-sizing: border-box; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -346,8 +352,6 @@ header h1 {
 .title2 {
     width: 40%;
     height: 40px;
-    /* border: 1px solid #4b2e9b; */
-    /* box-sizing: border-box; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -363,12 +367,20 @@ header h1 {
     border: 1px solid #000;
     background-color: #000;
     color: #fff;
+    box-sizing: border-box;
 }
 
 .form_input {
     width: 40%;
     align-self: center;
     height: 40px;
+}
+
+#Telefone::-webkit-outer-spin-button,
+#Telefone::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield;
 }
 
 #form_btn {
@@ -389,7 +401,6 @@ header h1 {
 }
 
 .form_label {
-    /* display: inline; */
     margin-left: 15%;
     position: relative;
     top: 10%;
@@ -399,7 +410,6 @@ header h1 {
     width: 40%;
     padding: 15px;
     box-sizing: border-box;
-    /* border: 1px solid rgb(255, 220, 22); */
     background-color: #1F9103;
     display: flex;
 }
@@ -428,4 +438,43 @@ header h1 {
 .social_media p {
     padding: 0;
     color: #fff;
+}
+
+
+/*---------------------- MEDIA QUERIES ---------------------- */
+
+@media (max-width:975px) {
+    .contact_us {
+        flex-direction: column;
+    }
+    .title1 {
+        width: 100%;
+    }
+    .title2 {
+        display: none;
+    }
+    .form {
+        width: 100%;
+    }
+    .social_media {
+        width: 100%;
+    }
+    .form_label {
+        margin-left: 10%;
+    }
+    #form_btn {
+        height: 35px;
+    }
+    .text {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:600px) {
+    body {
+        font-size: 13px;
+    }
+    .text {
+        font-size: 25px;
+    }
 }
